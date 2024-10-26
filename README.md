@@ -11,17 +11,17 @@ git clone https://github.com/Syed-maaz13/CollegeWorkshop.git
 To keep dependencies organized, create a virtual environment.
 
 
-# For Windows
+//For Windows
 python -m venv venv
-# For macOS/Linux
+//For macOS/Linux
 python3 -m venv venv
 
 
 3. Activate the Virtual Environment
 
-# For Windows
+// For Windows
 .\venv\Scripts\activate
-# For macOS/Linux
+//For macOS/Linux
 source venv/bin/activate
 
 4. Install Dependencies
