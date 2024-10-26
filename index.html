@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Display</title>
+</head>
+<body>
+    <h1>API Message:</h1>
+    <p id="message"></p>
+    <button onclick="fetchMessage()">Get Message</button> <!-- Button added -->
+
+    <script>
+        function fetchMessage() {
+            fetch('http://127.0.0.1:8000/hello')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('message').textContent = data.message;
+                })
+                .catch(error => console.error('Error:', error));
+        }
+    </script>
+</body>
+</html>
